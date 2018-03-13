@@ -1,0 +1,17 @@
+Router>enable
+Router#config t
+
+Router(config)#hostname prawy
+prawy(config)#enable password zaq!2wsx
+lewy#copy running-config startup-config
+show interface
+show ip interface brief
+show controllers serial 0/0/0
+
+200.200.200.128 /30
+
+lewy(config)#int s0/0/0              //interfejs serial 0/0/0
+lewy(config-if)#ip add 200.200.200.129 255.255.255.252
+(config-if)#clock rate 64000 //tylko tak gdzie jest zagarek
+lewy(config-if)#no shutdown
+#show ip interface brief
