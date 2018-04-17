@@ -1,0 +1,12 @@
+26 - 192
+27 - 224
+28 - 240
+29 - 248
+30 - 252
+
+sh ip route
+sh ip protocols
+configure terminal
+router rip
+network [adres sieci]
+
